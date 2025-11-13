@@ -59,3 +59,12 @@ adb install app/build/outputs/apk/release/app-release.apk
 ```bash
 ./gradlew detekt
 ```  
+
+## Скачваие apk в тупую не сработает
+Проблема: Android 14 блокирует установку APK-файлов, которые запрашивают 
+Специальные возможности (Accessibility Service), если ставишь их не из Google Play.
+
+Решение (единственный способ): Только через ADB.
+```bash
+adb install имя_файла.apk
+```
