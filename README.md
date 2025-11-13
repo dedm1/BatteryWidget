@@ -9,12 +9,6 @@
 ## ИИ
 Написано с испольщованием ии
 
-## Проект
-
-Минимальный проект на Kotlin/Compose под Android 14+, стартовая точка для разработки виджета батареи.
-
-**Размер production APK:** ~3 МБ (оптимизированный release build)
-
 ### Версионирование
 
 Версия приложения задается в `app/build.gradle.kts`:
@@ -65,5 +59,3 @@ adb install app/build/outputs/apk/release/app-release.apk
 ```bash
 ./gradlew detekt
 ```  
-
-> Примечание: команды предполагают, что Android SDK/ADB уже установлены и прописаны в PATH.
